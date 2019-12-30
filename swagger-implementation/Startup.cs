@@ -59,7 +59,7 @@ namespace swagger_implementation
             // specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Mukesh's API");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Mukesh's API v3");
             });
         }
     }
