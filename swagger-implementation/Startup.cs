@@ -29,7 +29,7 @@ namespace swagger_implementation
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v3", new OpenApiInfo { Title = "Mukesh's API", Version = "v3" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Mukesh's API", Version = "v1" });
             });
             services.AddControllers();
         }
@@ -59,7 +59,7 @@ namespace swagger_implementation
             // specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Mukesh's API v3");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Mukesh's API V1");
             });
         }
     }
